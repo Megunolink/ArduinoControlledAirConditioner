@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meguno-link-project version="1.0">
+  <culture>en-NZ</culture>
+  <policies>
+    <enable>false</enable>
+    <protect>false</protect>
+    <application>
+      <allow-tool-setup>true</allow-tool-setup>
+      <allow-reporting>true</allow-reporting>
+      <title-text />
+    </application>
+    <visualizers>
+      <allow-creation>true</allow-creation>
+      <allow-close>true</allow-close>
+      <allow-source-selection>true</allow-source-selection>
+      <allow-channel-selection>true</allow-channel-selection>
+      <show-source-selector>true</show-source-selector>
+      <show-examples-button>true</show-examples-button>
+      <show-help-button>true</show-help-button>
+      <custom>
+        <policy id="DataTable">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-send>true</allow-send>
+        </policy>
+        <policy id="FileWriter">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-path-change>true</allow-path-change>
+          <allow-edit-timestamp>true</allow-edit-timestamp>
+        </policy>
+        <policy id="LogToFile">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-path-change>true</allow-path-change>
+          <allow-edit-timestamp>true</allow-edit-timestamp>
+        </policy>
+        <policy id="MessageStreamViewer">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-send>true</allow-send>
+          <allow-edit-wordwrap>true</allow-edit-wordwrap>
+          <allow-edit-timestamp>true</allow-edit-timestamp>
+        </policy>
+        <policy id="SerialMonitor">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-send>true</allow-send>
+          <allow-edit-wordwrap>true</allow-edit-wordwrap>
+          <allow-edit-timestamp>true</allow-edit-timestamp>
+        </policy>
+        <policy id="SourceManager">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-edit-baud>true</allow-edit-baud>
+          <allow-edit-advanced>true</allow-edit-advanced>
+          <allow-delete>true</allow-delete>
+          <allow-edit-autoconnect>true</allow-edit-autoconnect>
+          <allow-new-source>true</allow-new-source>
+          <allow-edit-name>true</allow-edit-name>
+          <allow-reset>true</allow-reset>
+          <allow-udp-port-change>true</allow-udp-port-change>
+        </policy>
+        <policy id="InterfacePanel">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-designer>true</allow-designer>
+        </policy>
+        <policy id="mlpChart">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-edit-properties>true</allow-edit-properties>
+          <allow-edit-series-properties>true</allow-edit-series-properties>
+        </policy>
+        <policy id="ScatterPlotter">
+          <allow-source-selection>Inherit</allow-source-selection>
+          <allow-channel-selection>Inherit</allow-channel-selection>
+          <allow-edit-properties>true</allow-edit-properties>
+          <allow-edit-series-properties>true</allow-edit-series-properties>
+        </policy>
+      </custom>
+    </visualizers>
+  </policies>
+  <data>
+    <properties>
+      <title />
+      <description />
+      <image-48 />
+    </properties>
+    <shared-visualizer-data>
+      <data id="SerialMonitorData">
+        <send-cr-default>true</send-cr-default>
+        <send-lf-default>false</send-lf-default>
+        <word-wrap-default>false</word-wrap-default>
+        <include-date>false</include-date>
+        <include-time>false</include-time>
+        <include-custom>false</include-custom>
+        <custom-time-stamp />
+        <clear-on-send>false</clear-on-send>
+        <message-history>
+          <item>SETTEMP 20</item>
+          <item>SETTEMP 21</item>
+          <item>SFRAC 0.1</item>
+          <item>SETTEMP 25</item>
+          <item>HELLO 1</item>
+          <item>HELLO</item>
+          <item>RFON</item>
+          <item>My name is phil</item>
+          <item>talking through megunolink</item>
+          <item>AT</item>
+          <item>AT </item>
+          <item>AT+IPR=9600</item>
+          <item>AT+IPREX=9600</item>
+          <item>555</item>
+        </message-history>
+      </data>
+      <data id="DefaultPlotConfigurationData">
+        <show-summary-table>false</show-summary-table>
+        <show-legend>true</show-legend>
+        <default-symbol-size>4</default-symbol-size>
+        <default-line-width>1</default-line-width>
+        <default-dash-style>Solid</default-dash-style>
+        <default-visibility>true</default-visibility>
+        <next-color>4</next-color>
+        <next-symbol>0</next-symbol>
+        <series-styles>
+          <style name="Average Temperature">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Green</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Green</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Current Temperature">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Red</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Red</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Target Temperature">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Blue</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Blue</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Hysteresis +">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Dash</LineStyle>
+              <LineColor>Black</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Black</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Hysteresis -">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Dash</LineStyle>
+              <LineColor>Black</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Black</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Targemperature">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>LightSeaGreen</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Star</SymbolType>
+              <SymbolColor>LightSeaGreen</SymbolColor>
+              <SymbolSize>4</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Curreontroller">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Cyan</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Circle</SymbolType>
+              <SymbolColor>Cyan</SymbolColor>
+              <SymbolSize>4</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Total On Time (s)">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Red</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>None</SymbolType>
+              <SymbolColor>Red</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Hysteresis+">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Dash</LineStyle>
+              <LineColor>Black</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Circle</SymbolType>
+              <SymbolColor>Black</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Hysteresis-">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Dash</LineStyle>
+              <LineColor>Black</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Circle</SymbolType>
+              <SymbolColor>Black</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="SetPoint">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Blue</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Circle</SymbolType>
+              <SymbolColor>Blue</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+          <style name="Temperature">
+            <SeriesStyle xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+              <LineStyle>Solid</LineStyle>
+              <LineColor>Red</LineColor>
+              <LineWidth>1</LineWidth>
+              <SymbolType>Circle</SymbolType>
+              <SymbolColor>Red</SymbolColor>
+              <SymbolSize>5</SymbolSize>
+              <Visible>true</Visible>
+            </SeriesStyle>
+          </style>
+        </series-styles>
+      </data>
+      <data id="UploadManagerData">
+        <verify>true</verify>
+        <uploads>
+          <upload>
+            <display-name>Upload 1</display-name>
+            <path>C:\Users\Paul\Documents\N8I\AirConController\AirConController\bin\Debug\Uno\AirConController.hex</path>
+            <relative-path>false</relative-path>
+            <device-template-id>Uno</device-template-id>
+            <programmer-id>serial</programmer-id>
+            <port-name>COM7</port-name>
+            <last-upload>2015-05-27T20:10:40.9025778+12:00</last-upload>
+            <auto-program>true</auto-program>
+            <verify>false</verify>
+          </upload>
+        </uploads>
+      </data>
+    </shared-visualizer-data>
+  </data>
+  <serial-sources>
+    <default>2</default>
+    <sources>
+      <source type="SharedRS232Port">
+        <id>2</id>
+        <is-programmer>true</is-programmer>
+        <display-name>Temperature Controller</display-name>
+        <auto-connect>false</auto-connect>
+        <port-name>
+          <type>Fixed</type>
+          <port>COM7</port>
+        </port-name>
+        <baud-rate>9600</baud-rate>
+        <data-bits>8</data-bits>
+        <handshaking>None</handshaking>
+        <parity>None</parity>
+        <stop-bits>One</stop-bits>
+      </source>
+    </sources>
+  </serial-sources>
+  <windows>
+    <window>
+      <position left="-8" top="-8" width="1456" height="939" state="Maximized" />
+      <DockPanel FormatVersion="1.0" DockLeftPortion="0.15" DockRightPortion="0.25" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="1" ActivePane="1">
+        <Contents Count="7">
+          <Content ID="0" PersistString="mlpChart" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>false</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <SourceId>2</SourceId>
+            <TabTitle>Time Plot</TabTitle>
+            <reporting-enabled>false</reporting-enabled>
+            <show-summary>false</show-summary>
+            <active-channels />
+            <reporting>
+              <width>640</width>
+              <height>480</height>
+              <dpi>96</dpi>
+              <anti-alias>true</anti-alias>
+              <filename-pattern>Graph {Seq}</filename-pattern>
+              <format>b96b3caf-0728-11d3-9d7b-0000f81ef32e</format>
+            </reporting>
+            <title>
+              <text>Room Temperature Controller</text>
+              <visible>true</visible>
+              <font>
+                <color>-16777216</color>
+                <family>Microsoft Sans Serif</family>
+                <bold>true</bold>
+                <italic>false</italic>
+                <size>16</size>
+              </font>
+            </title>
+            <x-axis>
+              <minimum>42151.586353344843</minimum>
+              <maximum>42151.851661180612</maximum>
+              <major-step>1</major-step>
+              <minor-step>30</minor-step>
+              <major-unit>Hour</major-unit>
+              <minor-unit>Minute</minor-unit>
+              <minimum-auto>false</minimum-auto>
+              <maximum-auto>false</maximum-auto>
+              <major-step-auto>true</major-step-auto>
+              <minor-step-auto>true</minor-step-auto>
+              <text>Time</text>
+              <visible>true</visible>
+              <font>
+                <color>-16777216</color>
+                <family>Microsoft Sans Serif</family>
+                <bold>true</bold>
+                <italic>false</italic>
+                <size>14</size>
+              </font>
+            </x-axis>
+            <y-axis>
+              <minimum>20.30170250462178</minimum>
+              <maximum>23.062149392397973</maximum>
+              <major-step>0.5</major-step>
+              <minor-step>0.1</minor-step>
+              <major-unit>Day</major-unit>
+              <minor-unit>Day</minor-unit>
+              <minimum-auto>false</minimum-auto>
+              <maximum-auto>false</maximum-auto>
+              <major-step-auto>true</major-step-auto>
+              <minor-step-auto>true</minor-step-auto>
+              <text>Temperature [DegC]</text>
+              <visible>true</visible>
+              <font>
+                <color>-16777216</color>
+                <family>Microsoft Sans Serif</family>
+                <bold>true</bold>
+                <italic>false</italic>
+                <size>14</size>
+              </font>
+            </y-axis>
+            <background-fill>
+              <color-1>-1</color-1>
+              <color-2>-46</color-2>
+              <angle>-45</angle>
+            </background-fill>
+            <run>true</run>
+          </Content>
+          <Content ID="1" PersistString="VisualizerToolbox" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+          <Content ID="2" PersistString="DataTable" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>true</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <SourceId>2</SourceId>
+            <TabTitle>Table</TabTitle>
+            <reporting-enabled>false</reporting-enabled>
+            <reporting>
+              <filename-pattern>Table {Seq}</filename-pattern>
+              <format>HTML</format>
+            </reporting>
+          </Content>
+          <Content ID="3" PersistString="SerialMonitor" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>true</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <InsertTimestamp>false</InsertTimestamp>
+            <WordWrap>false</WordWrap>
+            <IncludeDate>false</IncludeDate>
+            <IncludeTime>true</IncludeTime>
+            <IncludeCustom>false</IncludeCustom>
+            <CustomTimeStamp />
+            <SourceId>2</SourceId>
+            <TabTitle>Monitor</TabTitle>
+          </Content>
+          <Content ID="4" PersistString="InterfacePanel" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>false</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <design type="InterfacePanel">
+              <children child-list="Controls">
+                <component type="System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="TabControl1">
+                  <children child-list="Controls">
+                    <component type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="TabPage1">
+                      <children child-list="Controls">
+                        <component type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1">
+                          <children child-list="Controls">
+                            <component type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel1">
+                              <children child-list="Controls">
+                                <component type="IPControlLibrary.Controls.IPPictureBox, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="EnabledIndicatorPicture">
+                                  <properties>
+                                    <property name="Image">
+                                      <binary>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</binary>
+                                    </property>
+                                    <property name="SizeMode">StretchImage</property>
+                                    <property name="TabStop">False</property>
+                                    <property name="TabIndex">12</property>
+                                    <property name="Location">73, 4</property>
+                                    <property name="Name">EnabledIndicatorPicture</property>
+                                    <property name="Size">50, 50</property>
+                                  </properties>
+                                </component>
+                                <component type="IPControlLibrary.Controls.IPPictureBox, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="DisabledIndicatorPicture">
+                                  <properties>
+                                    <property name="Image">
+                                      <binary>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</binary>
+                                    </property>
+                                    <property name="SizeMode">StretchImage</property>
+                                    <property name="TabStop">False</property>
+                                    <property name="TabIndex">11</property>
+                                    <property name="Location">13, 4</property>
+                                    <property name="Name">DisabledIndicatorPicture</property>
+                                    <property name="Size">50, 50</property>
+                                  </properties>
+                                </component>
+                              </children>
+                              <properties>
+                                <property name="BorderStyle">FixedSingle</property>
+                                <property name="Location">149, 74</property>
+                                <property name="Name">Panel1</property>
+                                <property name="Size">136, 60</property>
+                                <property name="TabIndex">13</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetHyst">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="DecimalPlaces">1</property>
+                                <property name="Increment">0.01</property>
+                                <property name="Maximum">3</property>
+                                <property name="Minimum">0.01</property>
+                                <property name="Value">1</property>
+                                <property name="Location">128, 50</property>
+                                <property name="Name">nudSetHyst</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">10</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="btnSetHysteresis">
+                              <properties>
+                                <property name="OnClickSend">!SetHysteresis [nudSetHyst.Value]\r\n</property>
+                                <property name="Text">Set Hysteresis</property>
+                                <property name="Location">6, 49</property>
+                                <property name="Name">btnSetHysteresis</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">9</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="btnDisableControl">
+                              <properties>
+                                <property name="OnClickSend">!EnableController 0\r\n</property>
+                                <property name="Text">Disable Controller</property>
+                                <property name="Location">6, 78</property>
+                                <property name="Name">btnDisableControl</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="btnEnableController">
+                              <properties>
+                                <property name="OnClickSend">!EnableController 1\r\n</property>
+                                <property name="Text">Enable Controller</property>
+                                <property name="Location">6, 107</property>
+                                <property name="Name">btnEnableController</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">8</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetTemp">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="DecimalPlaces">1</property>
+                                <property name="Increment">0.5</property>
+                                <property name="Value">23</property>
+                                <property name="Location">128, 21</property>
+                                <property name="Name">nudSetTemp</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">4</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton5">
+                              <properties>
+                                <property name="OnClickSend">!SetTemperature [nudSetTemp.Value]\r\n</property>
+                                <property name="Text">Set Temperature</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 20</property>
+                                <property name="Name">IPButton5</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">5</property>
+                              </properties>
+                            </component>
+                            <component type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2">
+                              <properties>
+                                <property name="Text">degC</property>
+                                <property name="Location">295, 52</property>
+                                <property name="Name">Label2</property>
+                                <property name="Size">37, 21</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1">
+                              <properties>
+                                <property name="Text">degC</property>
+                                <property name="Location">295, 22</property>
+                                <property name="Name">Label1</property>
+                                <property name="Size">37, 21</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                          </children>
+                          <properties>
+                            <property name="TabStop">False</property>
+                            <property name="Text">Temperature Controller</property>
+                            <property name="Location">6, 6</property>
+                            <property name="Name">GroupBox1</property>
+                            <property name="RightToLeft">No</property>
+                            <property name="Size">338, 141</property>
+                            <property name="TabIndex">9</property>
+                          </properties>
+                        </component>
+                        <component type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2">
+                          <children child-list="Controls">
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton1">
+                              <properties>
+                                <property name="OnClickSend">!SetDialPosition 1\r\n</property>
+                                <property name="Text">AC Fan</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">90, 19</property>
+                                <property name="Name">IPButton1</property>
+                                <property name="Size">75, 23</property>
+                                <property name="TabIndex">0</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton2">
+                              <properties>
+                                <property name="OnClickSend">!SetDialPosition 0\r\n</property>
+                                <property name="Text">AC Off</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">9, 19</property>
+                                <property name="Name">IPButton2</property>
+                                <property name="Size">75, 23</property>
+                                <property name="TabIndex">1</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton4">
+                              <properties>
+                                <property name="OnClickSend">!SetDialPosition 2\r\n</property>
+                                <property name="Text">AC Low</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">171, 19</property>
+                                <property name="Name">IPButton4</property>
+                                <property name="Size">75, 23</property>
+                                <property name="TabIndex">3</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton3">
+                              <properties>
+                                <property name="OnClickSend">!SetDialPosition 3\r\n</property>
+                                <property name="Text">AC High</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">252, 19</property>
+                                <property name="Name">IPButton3</property>
+                                <property name="Size">75, 23</property>
+                                <property name="TabIndex">2</property>
+                              </properties>
+                            </component>
+                          </children>
+                          <properties>
+                            <property name="TabStop">False</property>
+                            <property name="Text">Manual AC Control</property>
+                            <property name="Location">6, 153</property>
+                            <property name="Name">GroupBox2</property>
+                            <property name="Size">338, 58</property>
+                            <property name="TabIndex">10</property>
+                          </properties>
+                        </component>
+                      </children>
+                      <properties>
+                        <property name="UseVisualStyleBackColor">True</property>
+                        <property name="Location">4, 22</property>
+                        <property name="TabIndex">0</property>
+                        <property name="Text">General</property>
+                        <property name="Name">TabPage1</property>
+                        <property name="Size">373, 223</property>
+                        <property name="Padding">3, 3, 3, 3</property>
+                      </properties>
+                    </component>
+                    <component type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="TabPage2">
+                      <children child-list="Controls">
+                        <component type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox3">
+                          <children child-list="Controls">
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="bttnDumpConfig">
+                              <properties>
+                                <property name="OnClickSend">!DumpConfig\r\n</property>
+                                <property name="Text">Show Configuration</property>
+                                <property name="Location">6, 152</property>
+                                <property name="Name">bttnDumpConfig</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">8</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="btnSetOffPos">
+                              <properties>
+                                <property name="OnClickSend">!SetServoDialPosition 0 [nudSetOffPos.Value]\r\n</property>
+                                <property name="Text">Set Off Position</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 19</property>
+                                <property name="Name">btnSetOffPos</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudServoDelay">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="Maximum">180</property>
+                                <property name="Value">50</property>
+                                <property name="Location">128, 124</property>
+                                <property name="Name">nudServoDelay</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetOffPos">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="Maximum">180</property>
+                                <property name="Location">128, 20</property>
+                                <property name="Name">nudSetOffPos</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetHighPos">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="Maximum">200</property>
+                                <property name="Value">122</property>
+                                <property name="Location">128, 98</property>
+                                <property name="Name">nudSetHighPos</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton6">
+                              <properties>
+                                <property name="OnClickSend">!SetServoDialPosition 1 [nudSetFanPos.Value]\r\n</property>
+                                <property name="Text">Set Fan Position</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 45</property>
+                                <property name="Name">IPButton6</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetLowPos">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="Maximum">180</property>
+                                <property name="Value">77</property>
+                                <property name="Location">128, 72</property>
+                                <property name="Name">nudSetLowPos</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton7">
+                              <properties>
+                                <property name="OnClickSend">!SetServoDialPosition 2 [nudSetLowPos.Value]\r\n</property>
+                                <property name="Text">Set Low Position</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 71</property>
+                                <property name="Name">IPButton7</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudSetFanPos">
+                              <children child-list="Controls" />
+                              <properties>
+                                <property name="OnValueChangedSend" />
+                                <property name="Maximum">180</property>
+                                <property name="Value">45</property>
+                                <property name="Location">128, 46</property>
+                                <property name="Name">nudSetFanPos</property>
+                                <property name="Size">167, 20</property>
+                                <property name="TabIndex">6</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton8">
+                              <properties>
+                                <property name="OnClickSend">!SetServoDialPosition 3 [nudSetHighPos.Value]\r\n</property>
+                                <property name="Text">Set High Position</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 97</property>
+                                <property name="Name">IPButton8</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                            <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="IPButton9">
+                              <properties>
+                                <property name="OnClickSend">!SetServoDelay [nudServoDelay.Value]\r\n</property>
+                                <property name="Text">Servo Delay</property>
+                                <property name="UseVisualStyleBackColor">True</property>
+                                <property name="Location">6, 123</property>
+                                <property name="Name">IPButton9</property>
+                                <property name="Size">116, 23</property>
+                                <property name="TabIndex">7</property>
+                              </properties>
+                            </component>
+                          </children>
+                          <properties>
+                            <property name="TabStop">False</property>
+                            <property name="Text">Position And Servo Settings</property>
+                            <property name="Location">3, 6</property>
+                            <property name="Name">GroupBox3</property>
+                            <property name="Size">333, 189</property>
+                            <property name="TabIndex">9</property>
+                          </properties>
+                        </component>
+                      </children>
+                      <properties>
+                        <property name="UseVisualStyleBackColor">True</property>
+                        <property name="Location">4, 22</property>
+                        <property name="TabIndex">1</property>
+                        <property name="Text">Advanced</property>
+                        <property name="Name">TabPage2</property>
+                        <property name="Size">373, 223</property>
+                        <property name="Padding">3, 3, 3, 3</property>
+                      </properties>
+                    </component>
+                  </children>
+                  <properties>
+                    <property name="SelectedIndex">0</property>
+                    <property name="Location">3, 3</property>
+                    <property name="Name">TabControl1</property>
+                    <property name="Size">381, 249</property>
+                    <property name="TabIndex">12</property>
+                  </properties>
+                </component>
+              </children>
+              <properties>
+                <property name="Name">UserControl1</property>
+                <property name="Size">561, 367</property>
+              </properties>
+              <components>
+                <component type="IPControlLibrary.Controls.IPButton, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="btnSetAvgFraction">
+                  <properties>
+                    <property name="OnClickSend">SFRAC [nudAvgFrac.Value]\r\n</property>
+                    <property name="Text">Set Average Fraction</property>
+                    <property name="Location">9, 23</property>
+                    <property name="Name">btnSetAvgFraction</property>
+                    <property name="Size">116, 23</property>
+                    <property name="TabIndex">1</property>
+                  </properties>
+                </component>
+                <component type="IPControlLibrary.Controls.IPNumericUpDown, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="nudAvgFrac">
+                  <children child-list="Controls" />
+                  <properties>
+                    <property name="OnValueChangedSend" />
+                    <property name="DecimalPlaces">3</property>
+                    <property name="Increment">0.01</property>
+                    <property name="Maximum">1</property>
+                    <property name="Value">0.1</property>
+                    <property name="Location">131, 26</property>
+                    <property name="Name">nudAvgFrac</property>
+                    <property name="Size">120, 20</property>
+                    <property name="TabIndex">0</property>
+                  </properties>
+                </component>
+                <component type="IPControlLibrary.Protocols.MLPMessageProcessor.MLPUIMessageProcessor, IPControlLibrary, Version=1.2.1505.1505, Culture=neutral, PublicKeyToken=null" name="MLPUIMessageProcessor">
+                  <properties />
+                </component>
+              </components>
+            </design>
+            <values>
+              <value name="nudAvgFrac">
+                <property name="Value"><![CDATA[0.1]]></property>
+              </value>
+              <value name="EnabledIndicatorPicture">
+                <property name="Visible"><![CDATA[True]]></property>
+              </value>
+              <value name="DisabledIndicatorPicture">
+                <property name="Visible"><![CDATA[True]]></property>
+              </value>
+              <value name="nudSetHyst">
+                <property name="Value"><![CDATA[1]]></property>
+              </value>
+              <value name="nudSetTemp">
+                <property name="Value"><![CDATA[23]]></property>
+              </value>
+              <value name="nudServoDelay">
+                <property name="Value"><![CDATA[50]]></property>
+              </value>
+              <value name="nudSetOffPos">
+                <property name="Value"><![CDATA[0]]></property>
+              </value>
+              <value name="nudSetHighPos">
+                <property name="Value"><![CDATA[122]]></property>
+              </value>
+              <value name="nudSetLowPos">
+                <property name="Value"><![CDATA[77]]></property>
+              </value>
+              <value name="nudSetFanPos">
+                <property name="Value"><![CDATA[45]]></property>
+              </value>
+            </values>
+            <SourceId>2</SourceId>
+            <TabTitle>Interface Panel</TabTitle>
+          </Content>
+          <Content ID="5" PersistString="SourceManager" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>true</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <SourceId>-1</SourceId>
+            <TabTitle>Connection Manager</TabTitle>
+          </Content>
+          <Content ID="6" PersistString="UploadManager2" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+            <ShowSourceInTitle>true</ShowSourceInTitle>
+            <ShowPortInTitle>false</ShowPortInTitle>
+            <SourceId>-1</SourceId>
+            <TabTitle>Program Devices</TabTitle>
+            <hide-details>true</hide-details>
+          </Content>
+        </Contents>
+        <Panes Count="7">
+          <Pane ID="0" DockState="DockRightAutoHide" ActiveContent="1">
+            <Contents Count="1">
+              <Content ID="0" RefID="1" />
+            </Contents>
+          </Pane>
+          <Pane ID="1" DockState="Document" ActiveContent="4">
+            <Contents Count="1">
+              <Content ID="0" RefID="4" />
+            </Contents>
+          </Pane>
+          <Pane ID="2" DockState="Float" ActiveContent="-1">
+            <Contents Count="1">
+              <Content ID="0" RefID="0" />
+            </Contents>
+          </Pane>
+          <Pane ID="3" DockState="Document" ActiveContent="3">
+            <Contents Count="2">
+              <Content ID="0" RefID="0" />
+              <Content ID="1" RefID="3" />
+            </Contents>
+          </Pane>
+          <Pane ID="4" DockState="Document" ActiveContent="2">
+            <Contents Count="1">
+              <Content ID="0" RefID="2" />
+            </Contents>
+          </Pane>
+          <Pane ID="5" DockState="Document" ActiveContent="5">
+            <Contents Count="1">
+              <Content ID="0" RefID="5" />
+            </Contents>
+          </Pane>
+          <Pane ID="6" DockState="Document" ActiveContent="6">
+            <Contents Count="1">
+              <Content ID="0" RefID="6" />
+            </Contents>
+          </Pane>
+        </Panes>
+        <DockWindows>
+          <DockWindow ID="0" DockState="Document" ZOrderIndex="0">
+            <NestedPanes Count="5">
+              <Pane ID="0" RefID="1" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+              <Pane ID="1" RefID="3" PrevPane="1" Alignment="Right" Proportion="0.58946042614908" />
+              <Pane ID="2" RefID="5" PrevPane="1" Alignment="Bottom" Proportion="0.19811320754717" />
+              <Pane ID="3" RefID="4" PrevPane="3" Alignment="Bottom" Proportion="0.283018867924528" />
+              <Pane ID="4" RefID="6" PrevPane="1" Alignment="Bottom" Proportion="0.5" />
+            </NestedPanes>
+          </DockWindow>
+          <DockWindow ID="1" DockState="DockLeft" ZOrderIndex="1">
+            <NestedPanes Count="0" />
+          </DockWindow>
+          <DockWindow ID="2" DockState="DockRight" ZOrderIndex="2">
+            <NestedPanes Count="1">
+              <Pane ID="0" RefID="0" PrevPane="-1" Alignment="Bottom" Proportion="0.5" />
+            </NestedPanes>
+          </DockWindow>
+          <DockWindow ID="3" DockState="DockTop" ZOrderIndex="3">
+            <NestedPanes Count="0" />
+          </DockWindow>
+          <DockWindow ID="4" DockState="DockBottom" ZOrderIndex="4">
+            <NestedPanes Count="0" />
+          </DockWindow>
+        </DockWindows>
+        <FloatWindows Count="1">
+          <FloatWindow ID="0" Bounds="1375, 305, 300, 300" ZOrderIndex="0">
+            <NestedPanes Count="1">
+              <Pane ID="0" RefID="2" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+            </NestedPanes>
+          </FloatWindow>
+        </FloatWindows>
+      </DockPanel>
+    </window>
+  </windows>
+  <reporting>
+    <generate-scheduled-reports>false</generate-scheduled-reports>
+    <destinations>
+      <report-to-folder>
+        <last-report-number>0</last-report-number>
+        <folder-path>\\RUADFS11\HOME$\Hrrpxr\My Documents</folder-path>
+        <use-sub-folder>true</use-sub-folder>
+        <sub-folder-pattern>Report {Seq}</sub-folder-pattern>
+        <enabled>true</enabled>
+        <period>PT1H</period>
+        <last-sent>0001-01-01T00:00:00</last-sent>
+      </report-to-folder>
+    </destinations>
+  </reporting>
+</meguno-link-project>
